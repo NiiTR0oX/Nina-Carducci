@@ -2,18 +2,51 @@
 <html lang="fr"> <!-- Ajout de la langue -->
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-		<link rel="stylesheet" href="./assets/style.css">
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/style-min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	<meta name="author" content="Nina Carducci" />
     	<meta name="copyright" content="© Nina Carducci" />
 		<title> Nina Carducci </title>
-		
+
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "ProfessionalService",
+				"name": "Nina Carducci",
+				"image": "./assets/images/nina-min.webp",
+				"url": "https://github.com/ninacarducci/ninacarducci.github.io",
+				"priceRange": "50€ - 400€",
+				"address": {
+				  "@type": "PostalAddress",
+				  "streetAddress": "68 avenue Alsace-Lorraine",
+				  "addressLocality": "Bordeaux",
+				  "postalCode": "33200",
+				  "addressCountry": "FR"
+				},
+				"telephone": "+33556677889",
+				"openingHoursSpecification": [
+				  {
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+					  "Monday",
+					  "Tuesday",
+					  "Wednesday",
+					  "Thursday",
+					  "Friday"
+					],
+					"opens": "10:00",
+					"closes": "19:00"
+				  }
+				],
+				"sameAs": ["https://www.instagram.com/ninacarducci.photo"]
+			  }
+		</script>	
 	</head>
+
 	<body> <!-- écartement pour le body -->
 		<header class="top-header"> <!-- de DIV  a header -->
 			<h1 class="name">Nina Carducci</h1> <!-- de H3 a H1 -->
@@ -40,13 +73,13 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-min.webp" class="d-block w-100" alt="...">
+							<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-min.webp" class="d-block w-100" alt="Homme qui traverse un passage piéton">
 						</div>
 						<div class="carousel-item">
-							<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-min.webp" class="d-block w-100" alt="...">
+							<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-min.webp" class="d-block w-100" alt="Foule qui danse">
 						</div>
 						<div class="carousel-item">
-							<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min.webp" class="d-block w-100" alt="...">
+							<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-min.webp" class="d-block w-100" alt="Les mariés qui dansent">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -62,7 +95,7 @@
 			<section> <!-- Ajout section  -->
 				<div id="about">
 					<div class="picture left">
-						<img src="./assets/images/nina.png" alt="Photo de Nina Carducci"> <!-- Ajout du ALT -->
+						<img src="./assets/images/nina-min.webp" alt="Photo de Nina Carducci"> <!-- Ajout du ALT -->
 					</div>
 					<div id="about-me">
 						<h2 class="about-me__title">A propos de moi</h2> <!-- De H3 a H2 -->
@@ -90,54 +123,56 @@
 				<div id="gallery">
 					<h2 class="title">Portfolio</h2> <!-- De H3 a H2 -->
 					<div class="container py-3">
+
 						<div class="gallery" style="display: none">
 							<img data-gallery-tag="Concert" 
 								 class="gallery-item"
-								 src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+								 src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-min.webp"
 								 alt="Concert de Aaron Paul"
 							/> <!-- Ajout du ALT -->
 							<img data-gallery-tag="Entreprises" 
 								 class="gallery-item"
-								 src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+								 src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-min.webp"
 								 alt="Entrepreneur Ali-Morshedlou"
 								 /> <!-- Ajout du ALT -->
 							<img data-gallery-tag="Entreprises" 
 								 class="gallery-item" 
-								 src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+								 src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-min.webp"
 								 alt="Entrepreneur Jason-Goodman"
 								 /> <!-- Ajout du ALT -->
 							<img data-gallery-tag="Mariages" 
 								 class="gallery-item" 
-								 src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+								 src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-min.webp"
 								 alt="Main Mariage hannah-busing"
 								 /> <!-- Ajout du ALT -->
 							<img data-gallery-tag="Portrait" 
 								 class="gallery-item" 
-								 src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+								 src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-min.webp"
 								 alt="Portrait Ade-Tunji"
 								 /> <!-- Ajout du ALT -->
 							<img data-gallery-tag="Mariages" 
 								 class="gallery-item" 
-								 src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+								 src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-min.webp"
 								 alt="Mariés sous un palmier"
 								 /> <!-- Ajout du ALT -->
 							<img data-gallery-tag="Portrait" 
 							 	 class="gallery-item" 
-								 src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
+								 src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-min.webp"
 								 alt="Femme portrait lunettes"
 								 /> <!-- Ajout du ALT -->
 							<img data-gallery-tag="Concert" 
 								 class="gallery-item" 
-								 src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+								 src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-min.webp"
 								 alt="Concert Austin-Neill"
 								 /> <!-- Ajout du ALT -->
 							<img data-gallery-tag="Entreprises" 
 								 class="gallery-item" 
-								 src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+								 src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-min.webp"
 								 alt="Femme qui travaille sur un ordinateur"
 								 /> <!-- Ajout du ALT -->
 						</div>
 					</div>
+				</div>
 			</section>
 			<div class="quote">
 				<figure>
@@ -150,10 +185,9 @@
 				  </blockquote>
 				  <figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
-			  </div>
 			</div>
-		  </section>
-		  <div id="services">
+
+		  <section id="services">
 			<h2 class="title">Mes services</h2>
 			<div class="container">
 			  <div class="service">
@@ -198,7 +232,7 @@
 				</div>
 			  </div>
 			</div>
-		  </div>
+		</section>
 		  <div class="quote">
 			<figure>
 			  <blockquote class="quote__text">
@@ -209,12 +243,12 @@
 			  <figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		  </div>
-			<div id="contact">
+			<section id="contact">
 				<div class="container">
 					<div class="form-container">
 						<h3>Une question ? Une demande de devis ?</h3>
 						<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-						<form action="" method="post">
+						<form action="/" method="post">
 							<label for="nom">Nom</label>
 							<input 
 								type="text" 
@@ -238,10 +272,10 @@
 						</form>
 					</div>
 					<div class="picture right">
-						<img src="./assets/images/camera.png" alt="photo d'un appareil photo">
+						<img src="./assets/images/camera-min.webp" alt="photo d'un appareil photo">
 					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 		<footer> <!-- Ajout du footer -->
 		<div>
@@ -253,9 +287,9 @@
 		  <p>Horaires d'ouverture : Lundi - Vendredi de 10h à 19h.</p>
 		</div>
 	  	</footer>
-		  <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+		  <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 		  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		  <script src="./assets/maugallery.js"></script>
-		  <script src="./assets/scripts.js"></script>
+		  <script src="./assets/maugallery-min.js"></script>
+		  <script src="./assets/scripts-min.js"></script>
 	</body>
 </html>
